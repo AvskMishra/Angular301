@@ -1,0 +1,732 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>book-my-movie documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">book-my-movie documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content miscellaneous-variables">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+<ol class="breadcrumb">
+  <li>Miscellaneous</li>
+  <li>Variables</li>
+</ol>
+
+<section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <ul class="index-list">
+                        <li>
+                            <a href="#BASE_URL" title="src/app/shared/config.ts"><b>BASE_URL</b>&nbsp;&nbsp;&nbsp;(src/.../config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.ts"><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#environment" title="src/environments/environment.prod.ts"><b>environment</b>&nbsp;&nbsp;&nbsp;(src/.../environment.prod.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getMovieState" title="src/app/reducers/index.ts"><b>getMovieState</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#getUserState" title="src/app/reducers/index.ts"><b>getUserState</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#initialMovieState" title="src/app/home/store/reducers/home.reducer.ts"><b>initialMovieState</b>&nbsp;&nbsp;&nbsp;(src/.../home.reducer.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#initialUserState" title="src/app/core/store/reducers/userDetails.reducer.ts"><b>initialUserState</b>&nbsp;&nbsp;&nbsp;(src/.../userDetails.reducer.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#JSON_SERVER_URLS" title="src/app/shared/config.ts"><b>JSON_SERVER_URLS</b>&nbsp;&nbsp;&nbsp;(src/.../config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#materialModules" title="src/app/material.module.ts"><b>materialModules</b>&nbsp;&nbsp;&nbsp;(src/.../material.module.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#metaReducers" title="src/app/reducers/index.ts"><b>metaReducers</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#nowPlayingMoviesSelector" title="src/app/reducers/index.ts"><b>nowPlayingMoviesSelector</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#reducers" title="src/app/reducers/index.ts"><b>reducers</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#SEARCH_URL" title="src/app/admin/services/admin.service.ts"><b>SEARCH_URL</b>&nbsp;&nbsp;&nbsp;(src/.../admin.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#theaterList" title="src/app/reducers/index.ts"><b>theaterList</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#THEATERS_URL" title="src/app/admin/services/admin.service.ts"><b>THEATERS_URL</b>&nbsp;&nbsp;&nbsp;(src/.../admin.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#TMDB_URLS" title="src/app/shared/config.ts"><b>TMDB_URLS</b>&nbsp;&nbsp;&nbsp;(src/.../config.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#upcomingMovieSelector" title="src/app/reducers/index.ts"><b>upcomingMovieSelector</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#USERS_URL" title="src/app/core/services/userDetails.service.ts"><b>USERS_URL</b>&nbsp;&nbsp;&nbsp;(src/.../userDetails.service.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#userSelector" title="src/app/reducers/index.ts"><b>userSelector</b>&nbsp;&nbsp;&nbsp;(src/.../index.ts)</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <h3>src/app/shared/config.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="BASE_URL"></a>
+                        <span class="name">
+                            <b>
+                            BASE_URL</b>
+                            <a href="#BASE_URL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  TMDB_API: &#x27;https://api.themoviedb.org/&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="JSON_SERVER_URLS"></a>
+                        <span class="name">
+                            <b>
+                            JSON_SERVER_URLS</b>
+                            <a href="#JSON_SERVER_URLS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  THEATER_URL: &#x27;/theater&#x27;,
+  USER_DETAILS: &#x27;/userDetails&#x27;,
+  USER_RATING: &#x27;/userRatings&#x27;,
+  BOOKING_DETAILS: &#x27;/bookingDetails&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="TMDB_URLS"></a>
+                        <span class="name">
+                            <b>
+                            TMDB_URLS</b>
+                            <a href="#TMDB_URLS"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  GET_CREDITS: &#x27;3/movie/&#x27;,
+  NOW_PLAYING_MOVIES: &#x27;3/movie/now_playing?&#x27;,
+  UPCOMING_MOVIES: &#x27;3/movie/upcoming?&#x27;,
+  GENRES: &#x27;3/genre/movie/list?&#x27;,
+  SEARCH_URL: &#x27;3/search/movie?&#x27;,
+  SEARCH_MOVIE: &#x27;3/search/movie&#x27;,
+  IMAGE_URL: &#x27;https://image.tmdb.org/t/p/w300&#x27;,
+  CAST_CREW_SMALL: &#x27;https://image.tmdb.org/t/p/w45&#x27;,
+  CAST_CREW_BIG: &#x27;https://image.tmdb.org/t/p/w92&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/environments/environment.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="environment"></a>
+                        <span class="name">
+                            <b>
+                            environment</b>
+                            <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  production: false,
+  API_KEY: &#x27;api_key&#x3D;c4f351490cb39722773a30b3347f2e0d&#x27;,
+  // movie API usage exapmle: https://api.themoviedb.org/3/movie/{movie_id}/changes?api_key&#x3D;&lt;&lt;api_key&gt;&gt;&amp;page&#x3D;1
+  JSONSERVER: &#x27;http://localhost:3000&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/environments/environment.prod.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="environment"></a>
+                        <span class="name">
+                            <b>
+                            environment</b>
+                            <a href="#environment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+  production: true,
+  API_KEY: &#x27;api_key&#x3D;c4f351490cb39722773a30b3347f2e0d&#x27;,
+  JSONSERVER: &#x27;https://book-my-movie-data.firebaseapp.com/api&#x27;
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/reducers/index.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getMovieState"></a>
+                        <span class="name">
+                            <b>
+                            getMovieState</b>
+                            <a href="#getMovieState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createFeatureSelector&lt;MoviesState&gt;(&#x27;movies&#x27;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getUserState"></a>
+                        <span class="name">
+                            <b>
+                            getUserState</b>
+                            <a href="#getUserState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createFeatureSelector&lt;UserState&gt;(&#x27;user&#x27;)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="metaReducers"></a>
+                        <span class="name">
+                            <b>
+                            metaReducers</b>
+                            <a href="#metaReducers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MetaReducer[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>!environment.production ? [] : []</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nowPlayingMoviesSelector"></a>
+                        <span class="name">
+                            <b>
+                            nowPlayingMoviesSelector</b>
+                            <a href="#nowPlayingMoviesSelector"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createSelector(getMovieState, (state: MoviesState) &#x3D;&gt; state.nowPlayingMovies)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reducers"></a>
+                        <span class="name">
+                            <b>
+                            reducers</b>
+                            <a href="#reducers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/State.html" target="_self" >ActionReducerMap&lt;State&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    movies: moviesReducer,
+    user: userReducer
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="theaterList"></a>
+                        <span class="name">
+                            <b>
+                            theaterList</b>
+                            <a href="#theaterList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createSelector(getMovieState, (state: MoviesState) &#x3D;&gt; state.setTheaters)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="upcomingMovieSelector"></a>
+                        <span class="name">
+                            <b>
+                            upcomingMovieSelector</b>
+                            <a href="#upcomingMovieSelector"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createSelector(getMovieState, (state: MoviesState) &#x3D;&gt; state.upcomingMovies)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userSelector"></a>
+                        <span class="name">
+                            <b>
+                            userSelector</b>
+                            <a href="#userSelector"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>createSelector(getUserState, (state: UserState) &#x3D;&gt; state.user)</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/home/store/reducers/home.reducer.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initialMovieState"></a>
+                        <span class="name">
+                            <b>
+                            initialMovieState</b>
+                            <a href="#initialMovieState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/MoviesState.html" target="_self" >MoviesState</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    nowPlayingMovies: [],
+    upcomingMovies: [],
+    setTheaters: []
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/core/store/reducers/userDetails.reducer.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initialUserState"></a>
+                        <span class="name">
+                            <b>
+                            initialUserState</b>
+                            <a href="#initialUserState"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/UserState.html" target="_self" >UserState</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    user: {
+        id: &#x27;&#x27;,
+        name: &#x27;&#x27;,
+        email: &#x27;&#x27;,
+        image: &#x27;&#x27;,
+        token: &#x27;&#x27;,
+        role: &#x27;&#x27;,
+        preference: {
+            language: &#x27;&#x27;,
+            genre: [],
+            theater: [],
+        },
+        rating: {
+            movieId: &#x27;&#x27;,
+            rating: &#x27;&#x27;
+        }
+
+    }
+}</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/material.module.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="materialModules"></a>
+                        <span class="name">
+                            <b>
+                            materialModules</b>
+                            <a href="#materialModules"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatIconModule,
+  MatGridListModule,
+  MatMenuModule,
+  MatInputModule,
+  MatSelectModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatDialogModule,
+  MatSnackBarModule,
+  ScrollingModule,
+  MatSnackBarModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule
+]</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/admin/services/admin.service.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="SEARCH_URL"></a>
+                        <span class="name">
+                            <b>
+                            SEARCH_URL</b>
+                            <a href="#SEARCH_URL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>BASE_URL.TMDB_API + TMDB_URLS.SEARCH_URL</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="THEATERS_URL"></a>
+                        <span class="name">
+                            <b>
+                            THEATERS_URL</b>
+                            <a href="#THEATERS_URL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.JSONSERVER + JSON_SERVER_URLS.THEATER_URL</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+    <h3>src/app/core/services/userDetails.service.ts</h3>
+    <section>
+    <h3></h3>        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="USERS_URL"></a>
+                        <span class="name">
+                            <b>
+                            USERS_URL</b>
+                            <a href="#USERS_URL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.JSONSERVER + JSON_SERVER_URLS.USER_DETAILS</code>
+                        </td>
+                    </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-variables';
+            var COMPODOC_CURRENT_PAGE_URL = 'variables.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

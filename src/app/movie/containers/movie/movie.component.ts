@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterContentInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as MovieState from '../../../reducers/index';
-import { Router, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Movie } from '../../../home/models/movie.model';
 import { MovieService } from '../../services/movie.service';
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, TemplateRef } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, TemplateRef, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { theaterList } from 'src/app/reducers';
 import { AdminService } from '../../services/admin.service';
@@ -7,7 +7,8 @@ import { MatDialog } from '@angular/material';
 @Component({
   selector: 'app-change-show',
   templateUrl: './change-show.component.html',
-  styleUrls: ['./change-show.component.scss']
+  styleUrls: ['./change-show.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChangeShowComponent implements OnInit {
   @Input() theaterList;
@@ -19,7 +20,7 @@ export class ChangeShowComponent implements OnInit {
   nowPlaying = [];
   @ViewChild('successDialog') successDialog: TemplateRef<any>;
 
-  constructor(private adminService: AdminService, private matDialog: MatDialog) {
+  constructor(private adminService: AdminService, private matDialog: MatDialog, private cd: ChangeDetectorRef, ) {
     this.movieInput = new FormControl();
     this.selectTheater = new FormControl();
   }
@@ -34,9 +35,19 @@ export class ChangeShowComponent implements OnInit {
     });
     this.selectTheater.valueChanges.subscribe(value => {
       this.selectedTheater = value;
+      this.cd.detectChanges();
       this.nowShowing = [];
     });
   }
+
+  trackThreater(index, theater) {
+    if (theater) {
+      return theater.tid;
+    } else {
+      return -1;
+    }
+  }
+
   addMovie(movie) {
     this.nowShowing.push(movie.name);
     this.nowPlaying.push(movie.id);
@@ -48,6 +59,15 @@ export class ChangeShowComponent implements OnInit {
   cancel() {
     this.nowShowing = [];
   }
+
+  trackMovie(index, movie) {
+    if (movie) {
+      return movie.id;
+    } else {
+      return -1;
+    }
+  }
+
   dialogOk() {
     this.nowShowing = [];
     this.movieInput.reset();
@@ -55,4 +75,8 @@ export class ChangeShowComponent implements OnInit {
     this.matDialog.closeAll();
     this.movieResult = [];
   }
+
+    track(_index, item) {
+        return item;
+      }
 }

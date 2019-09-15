@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-  constructor(private dialog: MatDialog, private router: Router) {}
+  constructor(private dialog: MatDialog, private router: Router) { }
 
   ngOnInit() {
     setTimeout(() => this.openSearchPage());
@@ -23,7 +23,6 @@ export class SearchComponent implements OnInit {
       maxHeight: '100vh'
     });
     dialogRef.afterClosed().subscribe(result => {
-      // this.router.navigate(['/home']);
     });
   }
 }

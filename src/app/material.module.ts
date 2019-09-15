@@ -1,15 +1,15 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {
-  MatAutocompleteModule,
-  MatButtonModule,
-  MatIconModule,
-  MatGridListModule,
   MatMenuModule,
   MatInputModule,
   MatSelectModule,
   MatNativeDateModule,
   MatDatepickerModule,
   MatDialogModule,
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatIconModule,
+  MatGridListModule,
   MatSnackBarModule,
   MatTableModule,
   MatButtonToggleModule,
@@ -20,9 +20,6 @@ import { MatCardModule } from '@angular/material/card';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 
 const materialModules = [
-  MatAutocompleteModule,
-  MatButtonModule,
-  MatButtonToggleModule,
   MatCardModule,
   MatIconModule,
   MatGridListModule,
@@ -30,6 +27,9 @@ const materialModules = [
   MatInputModule,
   MatSelectModule,
   MatDatepickerModule,
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
   MatNativeDateModule,
   MatDialogModule,
   MatSnackBarModule,

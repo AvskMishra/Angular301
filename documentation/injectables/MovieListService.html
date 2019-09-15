@@ -1,0 +1,1843 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>book-my-movie documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">book-my-movie documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>MovieListService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/movie/movie-list.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#isoLangs">isoLangs</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getLanguageList">getLanguageList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(httpClient: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="738" class="link-to-prism">src/app/core/movie/movie-list.service.ts:738</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>httpClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLanguageList"></a>
+                    <span class="name">
+                        <b>
+                            getLanguageList
+                        </b>
+                        <a href="#getLanguageList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLanguageList(movieList)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="742"
+                            class="link-to-prism">src/app/core/movie/movie-list.service.ts:742</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>movieList</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isoLangs"></a>
+                        <span class="name">
+                            <b>
+                            isoLangs</b>
+                            <a href="#isoLangs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+    ab: {
+      name: &#x27;Abkhaz&#x27;,
+      nativeName: &#x27;аҧсуа&#x27;
+    },
+    aa: {
+      name: &#x27;Afar&#x27;,
+      nativeName: &#x27;Afaraf&#x27;
+    },
+    af: {
+      name: &#x27;Afrikaans&#x27;,
+      nativeName: &#x27;Afrikaans&#x27;
+    },
+    ak: {
+      name: &#x27;Akan&#x27;,
+      nativeName: &#x27;Akan&#x27;
+    },
+    sq: {
+      name: &#x27;Albanian&#x27;,
+      nativeName: &#x27;Shqip&#x27;
+    },
+    am: {
+      name: &#x27;Amharic&#x27;,
+      nativeName: &#x27;አማርኛ&#x27;
+    },
+    ar: {
+      name: &#x27;Arabic&#x27;,
+      nativeName: &#x27;العربية&#x27;
+    },
+    an: {
+      name: &#x27;Aragonese&#x27;,
+      nativeName: &#x27;Aragonés&#x27;
+    },
+    hy: {
+      name: &#x27;Armenian&#x27;,
+      nativeName: &#x27;Հայերեն&#x27;
+    },
+    as: {
+      name: &#x27;Assamese&#x27;,
+      nativeName: &#x27;অসমীয়া&#x27;
+    },
+    av: {
+      name: &#x27;Avaric&#x27;,
+      nativeName: &#x27;авар мацӀ, магӀарул мацӀ&#x27;
+    },
+    ae: {
+      name: &#x27;Avestan&#x27;,
+      nativeName: &#x27;avesta&#x27;
+    },
+    ay: {
+      name: &#x27;Aymara&#x27;,
+      nativeName: &#x27;aymar aru&#x27;
+    },
+    az: {
+      name: &#x27;Azerbaijani&#x27;,
+      nativeName: &#x27;azərbaycan dili&#x27;
+    },
+    bm: {
+      name: &#x27;Bambara&#x27;,
+      nativeName: &#x27;bamanankan&#x27;
+    },
+    ba: {
+      name: &#x27;Bashkir&#x27;,
+      nativeName: &#x27;башҡорт теле&#x27;
+    },
+    eu: {
+      name: &#x27;Basque&#x27;,
+      nativeName: &#x27;euskara, euskera&#x27;
+    },
+    be: {
+      name: &#x27;Belarusian&#x27;,
+      nativeName: &#x27;Беларуская&#x27;
+    },
+    bn: {
+      name: &#x27;Bengali&#x27;,
+      nativeName: &#x27;বাংলা&#x27;
+    },
+    bh: {
+      name: &#x27;Bihari&#x27;,
+      nativeName: &#x27;भोजपुरी&#x27;
+    },
+    bi: {
+      name: &#x27;Bislama&#x27;,
+      nativeName: &#x27;Bislama&#x27;
+    },
+    bs: {
+      name: &#x27;Bosnian&#x27;,
+      nativeName: &#x27;bosanski jezik&#x27;
+    },
+    br: {
+      name: &#x27;Breton&#x27;,
+      nativeName: &#x27;brezhoneg&#x27;
+    },
+    bg: {
+      name: &#x27;Bulgarian&#x27;,
+      nativeName: &#x27;български език&#x27;
+    },
+    my: {
+      name: &#x27;Burmese&#x27;,
+      nativeName: &#x27;ဗမာစာ&#x27;
+    },
+    ca: {
+      name: &#x27;Catalan; Valencian&#x27;,
+      nativeName: &#x27;Català&#x27;
+    },
+    ch: {
+      name: &#x27;Chamorro&#x27;,
+      nativeName: &#x27;Chamoru&#x27;
+    },
+    ce: {
+      name: &#x27;Chechen&#x27;,
+      nativeName: &#x27;нохчийн мотт&#x27;
+    },
+    ny: {
+      name: &#x27;Chichewa; Chewa; Nyanja&#x27;,
+      nativeName: &#x27;chiCheŵa, chinyanja&#x27;
+    },
+    zh: {
+      name: &#x27;Chinese&#x27;,
+      nativeName: &#x27;中文 (Zhōngwén), 汉语, 漢語&#x27;
+    },
+    cv: {
+      name: &#x27;Chuvash&#x27;,
+      nativeName: &#x27;чӑваш чӗлхи&#x27;
+    },
+    kw: {
+      name: &#x27;Cornish&#x27;,
+      nativeName: &#x27;Kernewek&#x27;
+    },
+    co: {
+      name: &#x27;Corsican&#x27;,
+      nativeName: &#x27;corsu, lingua corsa&#x27;
+    },
+    cr: {
+      name: &#x27;Cree&#x27;,
+      nativeName: &#x27;ᓀᐦᐃᔭᐍᐏᐣ&#x27;
+    },
+    hr: {
+      name: &#x27;Croatian&#x27;,
+      nativeName: &#x27;hrvatski&#x27;
+    },
+    cs: {
+      name: &#x27;Czech&#x27;,
+      nativeName: &#x27;česky, čeština&#x27;
+    },
+    da: {
+      name: &#x27;Danish&#x27;,
+      nativeName: &#x27;dansk&#x27;
+    },
+    dv: {
+      name: &#x27;Divehi; Dhivehi; Maldivian;&#x27;,
+      nativeName: &#x27;ދިވެހި&#x27;
+    },
+    nl: {
+      name: &#x27;Dutch&#x27;,
+      nativeName: &#x27;Nederlands, Vlaams&#x27;
+    },
+    en: {
+      name: &#x27;English&#x27;,
+      nativeName: &#x27;English&#x27;
+    },
+    eo: {
+      name: &#x27;Esperanto&#x27;,
+      nativeName: &#x27;Esperanto&#x27;
+    },
+    et: {
+      name: &#x27;Estonian&#x27;,
+      nativeName: &#x27;eesti, eesti keel&#x27;
+    },
+    ee: {
+      name: &#x27;Ewe&#x27;,
+      nativeName: &#x27;Eʋegbe&#x27;
+    },
+    fo: {
+      name: &#x27;Faroese&#x27;,
+      nativeName: &#x27;føroyskt&#x27;
+    },
+    fj: {
+      name: &#x27;Fijian&#x27;,
+      nativeName: &#x27;vosa Vakaviti&#x27;
+    },
+    fi: {
+      name: &#x27;Finnish&#x27;,
+      nativeName: &#x27;suomi, suomen kieli&#x27;
+    },
+    fr: {
+      name: &#x27;French&#x27;,
+      nativeName: &#x27;français, langue française&#x27;
+    },
+    ff: {
+      name: &#x27;Fula; Fulah; Pulaar; Pular&#x27;,
+      nativeName: &#x27;Fulfulde, Pulaar, Pular&#x27;
+    },
+    gl: {
+      name: &#x27;Galician&#x27;,
+      nativeName: &#x27;Galego&#x27;
+    },
+    ka: {
+      name: &#x27;Georgian&#x27;,
+      nativeName: &#x27;ქართული&#x27;
+    },
+    de: {
+      name: &#x27;German&#x27;,
+      nativeName: &#x27;Deutsch&#x27;
+    },
+    el: {
+      name: &#x27;Greek, Modern&#x27;,
+      nativeName: &#x27;Ελληνικά&#x27;
+    },
+    gn: {
+      name: &#x27;Guaraní&#x27;,
+      nativeName: &#x27;Avañeẽ&#x27;
+    },
+    gu: {
+      name: &#x27;Gujarati&#x27;,
+      nativeName: &#x27;ગુજરાતી&#x27;
+    },
+    ht: {
+      name: &#x27;Haitian; Haitian Creole&#x27;,
+      nativeName: &#x27;Kreyòl ayisyen&#x27;
+    },
+    ha: {
+      name: &#x27;Hausa&#x27;,
+      nativeName: &#x27;Hausa, هَوُسَ&#x27;
+    },
+    he: {
+      name: &#x27;Hebrew (modern)&#x27;,
+      nativeName: &#x27;עברית&#x27;
+    },
+    hz: {
+      name: &#x27;Herero&#x27;,
+      nativeName: &#x27;Otjiherero&#x27;
+    },
+    hi: {
+      name: &#x27;Hindi&#x27;,
+      nativeName: &#x27;हिन्दी, हिंदी&#x27;
+    },
+    ho: {
+      name: &#x27;Hiri Motu&#x27;,
+      nativeName: &#x27;Hiri Motu&#x27;
+    },
+    hu: {
+      name: &#x27;Hungarian&#x27;,
+      nativeName: &#x27;Magyar&#x27;
+    },
+    ia: {
+      name: &#x27;Interlingua&#x27;,
+      nativeName: &#x27;Interlingua&#x27;
+    },
+    id: {
+      name: &#x27;Indonesian&#x27;,
+      nativeName: &#x27;Bahasa Indonesia&#x27;
+    },
+    ie: {
+      name: &#x27;Interlingue&#x27;,
+      nativeName: &#x27;Originally called Occidental; then Interlingue after WWII&#x27;
+    },
+    ga: {
+      name: &#x27;Irish&#x27;,
+      nativeName: &#x27;Gaeilge&#x27;
+    },
+    ig: {
+      name: &#x27;Igbo&#x27;,
+      nativeName: &#x27;Asụsụ Igbo&#x27;
+    },
+    ik: {
+      name: &#x27;Inupiaq&#x27;,
+      nativeName: &#x27;Iñupiaq, Iñupiatun&#x27;
+    },
+    io: {
+      name: &#x27;Ido&#x27;,
+      nativeName: &#x27;Ido&#x27;
+    },
+    is: {
+      name: &#x27;Icelandic&#x27;,
+      nativeName: &#x27;Íslenska&#x27;
+    },
+    it: {
+      name: &#x27;Italian&#x27;,
+      nativeName: &#x27;Italiano&#x27;
+    },
+    iu: {
+      name: &#x27;Inuktitut&#x27;,
+      nativeName: &#x27;ᐃᓄᒃᑎᑐᑦ&#x27;
+    },
+    ja: {
+      name: &#x27;Japanese&#x27;,
+      nativeName: &#x27;日本語 (にほんご／にっぽんご)&#x27;
+    },
+    jv: {
+      name: &#x27;Javanese&#x27;,
+      nativeName: &#x27;basa Jawa&#x27;
+    },
+    kl: {
+      name: &#x27;Kalaallisut, Greenlandic&#x27;,
+      nativeName: &#x27;kalaallisut, kalaallit oqaasii&#x27;
+    },
+    kn: {
+      name: &#x27;Kannada&#x27;,
+      nativeName: &#x27;ಕನ್ನಡ&#x27;
+    },
+    kr: {
+      name: &#x27;Kanuri&#x27;,
+      nativeName: &#x27;Kanuri&#x27;
+    },
+    ks: {
+      name: &#x27;Kashmiri&#x27;,
+      nativeName: &#x27;कश्मीरी, كشميري‎&#x27;
+    },
+    kk: {
+      name: &#x27;Kazakh&#x27;,
+      nativeName: &#x27;Қазақ тілі&#x27;
+    },
+    km: {
+      name: &#x27;Khmer&#x27;,
+      nativeName: &#x27;ភាសាខ្មែរ&#x27;
+    },
+    ki: {
+      name: &#x27;Kikuyu, Gikuyu&#x27;,
+      nativeName: &#x27;Gĩkũyũ&#x27;
+    },
+    rw: {
+      name: &#x27;Kinyarwanda&#x27;,
+      nativeName: &#x27;Ikinyarwanda&#x27;
+    },
+    ky: {
+      name: &#x27;Kirghiz, Kyrgyz&#x27;,
+      nativeName: &#x27;кыргыз тили&#x27;
+    },
+    kv: {
+      name: &#x27;Komi&#x27;,
+      nativeName: &#x27;коми кыв&#x27;
+    },
+    kg: {
+      name: &#x27;Kongo&#x27;,
+      nativeName: &#x27;KiKongo&#x27;
+    },
+    ko: {
+      name: &#x27;Korean&#x27;,
+      nativeName: &#x27;한국어 (韓國語), 조선말 (朝鮮語)&#x27;
+    },
+    ku: {
+      name: &#x27;Kurdish&#x27;,
+      nativeName: &#x27;Kurdî, كوردی‎&#x27;
+    },
+    kj: {
+      name: &#x27;Kwanyama, Kuanyama&#x27;,
+      nativeName: &#x27;Kuanyama&#x27;
+    },
+    la: {
+      name: &#x27;Latin&#x27;,
+      nativeName: &#x27;latine, lingua latina&#x27;
+    },
+    lb: {
+      name: &#x27;Luxembourgish, Letzeburgesch&#x27;,
+      nativeName: &#x27;Lëtzebuergesch&#x27;
+    },
+    lg: {
+      name: &#x27;Luganda&#x27;,
+      nativeName: &#x27;Luganda&#x27;
+    },
+    li: {
+      name: &#x27;Limburgish, Limburgan, Limburger&#x27;,
+      nativeName: &#x27;Limburgs&#x27;
+    },
+    ln: {
+      name: &#x27;Lingala&#x27;,
+      nativeName: &#x27;Lingála&#x27;
+    },
+    lo: {
+      name: &#x27;Lao&#x27;,
+      nativeName: &#x27;ພາສາລາວ&#x27;
+    },
+    lt: {
+      name: &#x27;Lithuanian&#x27;,
+      nativeName: &#x27;lietuvių kalba&#x27;
+    },
+    lu: {
+      name: &#x27;Luba-Katanga&#x27;,
+      nativeName: &#x27;&#x27;
+    },
+    lv: {
+      name: &#x27;Latvian&#x27;,
+      nativeName: &#x27;latviešu valoda&#x27;
+    },
+    gv: {
+      name: &#x27;Manx&#x27;,
+      nativeName: &#x27;Gaelg, Gailck&#x27;
+    },
+    mk: {
+      name: &#x27;Macedonian&#x27;,
+      nativeName: &#x27;македонски јазик&#x27;
+    },
+    mg: {
+      name: &#x27;Malagasy&#x27;,
+      nativeName: &#x27;Malagasy fiteny&#x27;
+    },
+    ms: {
+      name: &#x27;Malay&#x27;,
+      nativeName: &#x27;bahasa Melayu, بهاس ملايو‎&#x27;
+    },
+    ml: {
+      name: &#x27;Malayalam&#x27;,
+      nativeName: &#x27;മലയാളം&#x27;
+    },
+    mt: {
+      name: &#x27;Maltese&#x27;,
+      nativeName: &#x27;Malti&#x27;
+    },
+    mi: {
+      name: &#x27;Māori&#x27;,
+      nativeName: &#x27;te reo Māori&#x27;
+    },
+    mr: {
+      name: &#x27;Marathi (Marāṭhī)&#x27;,
+      nativeName: &#x27;मराठी&#x27;
+    },
+    mh: {
+      name: &#x27;Marshallese&#x27;,
+      nativeName: &#x27;Kajin M̧ajeļ&#x27;
+    },
+    mn: {
+      name: &#x27;Mongolian&#x27;,
+      nativeName: &#x27;монгол&#x27;
+    },
+    na: {
+      name: &#x27;Nauru&#x27;,
+      nativeName: &#x27;Ekakairũ Naoero&#x27;
+    },
+    nv: {
+      name: &#x27;Navajo, Navaho&#x27;,
+      nativeName: &#x27;Diné bizaad, Dinékʼehǰí&#x27;
+    },
+    nb: {
+      name: &#x27;Norwegian Bokmål&#x27;,
+      nativeName: &#x27;Norsk bokmål&#x27;
+    },
+    nd: {
+      name: &#x27;North Ndebele&#x27;,
+      nativeName: &#x27;isiNdebele&#x27;
+    },
+    ne: {
+      name: &#x27;Nepali&#x27;,
+      nativeName: &#x27;नेपाली&#x27;
+    },
+    ng: {
+      name: &#x27;Ndonga&#x27;,
+      nativeName: &#x27;Owambo&#x27;
+    },
+    nn: {
+      name: &#x27;Norwegian Nynorsk&#x27;,
+      nativeName: &#x27;Norsk nynorsk&#x27;
+    },
+    no: {
+      name: &#x27;Norwegian&#x27;,
+      nativeName: &#x27;Norsk&#x27;
+    },
+    ii: {
+      name: &#x27;Nuosu&#x27;,
+      nativeName: &#x27;ꆈꌠ꒿ Nuosuhxop&#x27;
+    },
+    nr: {
+      name: &#x27;South Ndebele&#x27;,
+      nativeName: &#x27;isiNdebele&#x27;
+    },
+    oc: {
+      name: &#x27;Occitan&#x27;,
+      nativeName: &#x27;Occitan&#x27;
+    },
+    oj: {
+      name: &#x27;Ojibwe, Ojibwa&#x27;,
+      nativeName: &#x27;ᐊᓂᔑᓈᐯᒧᐎᓐ&#x27;
+    },
+    cu: {
+      name: &#x27;Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic&#x27;,
+      nativeName: &#x27;ѩзыкъ словѣньскъ&#x27;
+    },
+    om: {
+      name: &#x27;Oromo&#x27;,
+      nativeName: &#x27;Afaan Oromoo&#x27;
+    },
+    or: {
+      name: &#x27;Oriya&#x27;,
+      nativeName: &#x27;ଓଡ଼ିଆ&#x27;
+    },
+    os: {
+      name: &#x27;Ossetian, Ossetic&#x27;,
+      nativeName: &#x27;ирон æвзаг&#x27;
+    },
+    pa: {
+      name: &#x27;Panjabi, Punjabi&#x27;,
+      nativeName: &#x27;ਪੰਜਾਬੀ, پنجابی‎&#x27;
+    },
+    pi: {
+      name: &#x27;Pāli&#x27;,
+      nativeName: &#x27;पाऴि&#x27;
+    },
+    fa: {
+      name: &#x27;Persian&#x27;,
+      nativeName: &#x27;فارسی&#x27;
+    },
+    pl: {
+      name: &#x27;Polish&#x27;,
+      nativeName: &#x27;polski&#x27;
+    },
+    ps: {
+      name: &#x27;Pashto, Pushto&#x27;,
+      nativeName: &#x27;پښتو&#x27;
+    },
+    pt: {
+      name: &#x27;Portuguese&#x27;,
+      nativeName: &#x27;Português&#x27;
+    },
+    qu: {
+      name: &#x27;Quechua&#x27;,
+      nativeName: &#x27;Runa Simi, Kichwa&#x27;
+    },
+    rm: {
+      name: &#x27;Romansh&#x27;,
+      nativeName: &#x27;rumantsch grischun&#x27;
+    },
+    rn: {
+      name: &#x27;Kirundi&#x27;,
+      nativeName: &#x27;kiRundi&#x27;
+    },
+    ro: {
+      name: &#x27;Romanian, Moldavian, Moldovan&#x27;,
+      nativeName: &#x27;română&#x27;
+    },
+    ru: {
+      name: &#x27;Russian&#x27;,
+      nativeName: &#x27;русский язык&#x27;
+    },
+    sa: {
+      name: &#x27;Sanskrit (Saṁskṛta)&#x27;,
+      nativeName: &#x27;संस्कृतम्&#x27;
+    },
+    sc: {
+      name: &#x27;Sardinian&#x27;,
+      nativeName: &#x27;sardu&#x27;
+    },
+    sd: {
+      name: &#x27;Sindhi&#x27;,
+      nativeName: &#x27;सिन्धी, سنڌي، سندھی‎&#x27;
+    },
+    se: {
+      name: &#x27;Northern Sami&#x27;,
+      nativeName: &#x27;Davvisámegiella&#x27;
+    },
+    sm: {
+      name: &#x27;Samoan&#x27;,
+      nativeName: &#x27;gagana faa Samoa&#x27;
+    },
+    sg: {
+      name: &#x27;Sango&#x27;,
+      nativeName: &#x27;yângâ tî sängö&#x27;
+    },
+    sr: {
+      name: &#x27;Serbian&#x27;,
+      nativeName: &#x27;српски језик&#x27;
+    },
+    gd: {
+      name: &#x27;Scottish Gaelic; Gaelic&#x27;,
+      nativeName: &#x27;Gàidhlig&#x27;
+    },
+    sn: {
+      name: &#x27;Shona&#x27;,
+      nativeName: &#x27;chiShona&#x27;
+    },
+    si: {
+      name: &#x27;Sinhala, Sinhalese&#x27;,
+      nativeName: &#x27;සිංහල&#x27;
+    },
+    sk: {
+      name: &#x27;Slovak&#x27;,
+      nativeName: &#x27;slovenčina&#x27;
+    },
+    sl: {
+      name: &#x27;Slovene&#x27;,
+      nativeName: &#x27;slovenščina&#x27;
+    },
+    so: {
+      name: &#x27;Somali&#x27;,
+      nativeName: &#x27;Soomaaliga, af Soomaali&#x27;
+    },
+    st: {
+      name: &#x27;Southern Sotho&#x27;,
+      nativeName: &#x27;Sesotho&#x27;
+    },
+    es: {
+      name: &#x27;Spanish; Castilian&#x27;,
+      nativeName: &#x27;español, castellano&#x27;
+    },
+    su: {
+      name: &#x27;Sundanese&#x27;,
+      nativeName: &#x27;Basa Sunda&#x27;
+    },
+    sw: {
+      name: &#x27;Swahili&#x27;,
+      nativeName: &#x27;Kiswahili&#x27;
+    },
+    ss: {
+      name: &#x27;Swati&#x27;,
+      nativeName: &#x27;SiSwati&#x27;
+    },
+    sv: {
+      name: &#x27;Swedish&#x27;,
+      nativeName: &#x27;svenska&#x27;
+    },
+    ta: {
+      name: &#x27;Tamil&#x27;,
+      nativeName: &#x27;தமிழ்&#x27;
+    },
+    te: {
+      name: &#x27;Telugu&#x27;,
+      nativeName: &#x27;తెలుగు&#x27;
+    },
+    tg: {
+      name: &#x27;Tajik&#x27;,
+      nativeName: &#x27;тоҷикӣ, toğikī, تاجیکی‎&#x27;
+    },
+    th: {
+      name: &#x27;Thai&#x27;,
+      nativeName: &#x27;ไทย&#x27;
+    },
+    ti: {
+      name: &#x27;Tigrinya&#x27;,
+      nativeName: &#x27;ትግርኛ&#x27;
+    },
+    bo: {
+      name: &#x27;Tibetan Standard, Tibetan, Central&#x27;,
+      nativeName: &#x27;བོད་ཡིག&#x27;
+    },
+    tk: {
+      name: &#x27;Turkmen&#x27;,
+      nativeName: &#x27;Türkmen, Түркмен&#x27;
+    },
+    tl: {
+      name: &#x27;Tagalog&#x27;,
+      nativeName: &#x27;Wikang Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔&#x27;
+    },
+    tn: {
+      name: &#x27;Tswana&#x27;,
+      nativeName: &#x27;Setswana&#x27;
+    },
+    to: {
+      name: &#x27;Tonga (Tonga Islands)&#x27;,
+      nativeName: &#x27;faka Tonga&#x27;
+    },
+    tr: {
+      name: &#x27;Turkish&#x27;,
+      nativeName: &#x27;Türkçe&#x27;
+    },
+    ts: {
+      name: &#x27;Tsonga&#x27;,
+      nativeName: &#x27;Xitsonga&#x27;
+    },
+    tt: {
+      name: &#x27;Tatar&#x27;,
+      nativeName: &#x27;татарча, tatarça, تاتارچا‎&#x27;
+    },
+    tw: {
+      name: &#x27;Twi&#x27;,
+      nativeName: &#x27;Twi&#x27;
+    },
+    ty: {
+      name: &#x27;Tahitian&#x27;,
+      nativeName: &#x27;Reo Tahiti&#x27;
+    },
+    ug: {
+      name: &#x27;Uighur, Uyghur&#x27;,
+      nativeName: &#x27;Uyƣurqə, ئۇيغۇرچە‎&#x27;
+    },
+    uk: {
+      name: &#x27;Ukrainian&#x27;,
+      nativeName: &#x27;українська&#x27;
+    },
+    ur: {
+      name: &#x27;Urdu&#x27;,
+      nativeName: &#x27;اردو&#x27;
+    },
+    uz: {
+      name: &#x27;Uzbek&#x27;,
+      nativeName: &#x27;zbek, Ўзбек, أۇزبېك‎&#x27;
+    },
+    ve: {
+      name: &#x27;Venda&#x27;,
+      nativeName: &#x27;Tshivenḓa&#x27;
+    },
+    vi: {
+      name: &#x27;Vietnamese&#x27;,
+      nativeName: &#x27;Tiếng Việt&#x27;
+    },
+    vo: {
+      name: &#x27;Volapük&#x27;,
+      nativeName: &#x27;Volapük&#x27;
+    },
+    wa: {
+      name: &#x27;Walloon&#x27;,
+      nativeName: &#x27;Walon&#x27;
+    },
+    cy: {
+      name: &#x27;Welsh&#x27;,
+      nativeName: &#x27;Cymraeg&#x27;
+    },
+    wo: {
+      name: &#x27;Wolof&#x27;,
+      nativeName: &#x27;Wollof&#x27;
+    },
+    fy: {
+      name: &#x27;Western Frisian&#x27;,
+      nativeName: &#x27;Frysk&#x27;
+    },
+    xh: {
+      name: &#x27;Xhosa&#x27;,
+      nativeName: &#x27;isiXhosa&#x27;
+    },
+    yi: {
+      name: &#x27;Yiddish&#x27;,
+      nativeName: &#x27;ייִדיש&#x27;
+    },
+    yo: {
+      name: &#x27;Yoruba&#x27;,
+      nativeName: &#x27;Yorùbá&#x27;
+    },
+    za: {
+      name: &#x27;Zhuang, Chuang&#x27;,
+      nativeName: &#x27;Saɯ cueŋƅ, Saw cuengh&#x27;
+    }
+  }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/core/movie/movie-list.service.ts:9</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class MovieListService {
+  isoLangs &#x3D; {
+    ab: {
+      name: &#x27;Abkhaz&#x27;,
+      nativeName: &#x27;аҧсуа&#x27;
+    },
+    aa: {
+      name: &#x27;Afar&#x27;,
+      nativeName: &#x27;Afaraf&#x27;
+    },
+    af: {
+      name: &#x27;Afrikaans&#x27;,
+      nativeName: &#x27;Afrikaans&#x27;
+    },
+    ak: {
+      name: &#x27;Akan&#x27;,
+      nativeName: &#x27;Akan&#x27;
+    },
+    sq: {
+      name: &#x27;Albanian&#x27;,
+      nativeName: &#x27;Shqip&#x27;
+    },
+    am: {
+      name: &#x27;Amharic&#x27;,
+      nativeName: &#x27;አማርኛ&#x27;
+    },
+    ar: {
+      name: &#x27;Arabic&#x27;,
+      nativeName: &#x27;العربية&#x27;
+    },
+    an: {
+      name: &#x27;Aragonese&#x27;,
+      nativeName: &#x27;Aragonés&#x27;
+    },
+    hy: {
+      name: &#x27;Armenian&#x27;,
+      nativeName: &#x27;Հայերեն&#x27;
+    },
+    as: {
+      name: &#x27;Assamese&#x27;,
+      nativeName: &#x27;অসমীয়া&#x27;
+    },
+    av: {
+      name: &#x27;Avaric&#x27;,
+      nativeName: &#x27;авар мацӀ, магӀарул мацӀ&#x27;
+    },
+    ae: {
+      name: &#x27;Avestan&#x27;,
+      nativeName: &#x27;avesta&#x27;
+    },
+    ay: {
+      name: &#x27;Aymara&#x27;,
+      nativeName: &#x27;aymar aru&#x27;
+    },
+    az: {
+      name: &#x27;Azerbaijani&#x27;,
+      nativeName: &#x27;azərbaycan dili&#x27;
+    },
+    bm: {
+      name: &#x27;Bambara&#x27;,
+      nativeName: &#x27;bamanankan&#x27;
+    },
+    ba: {
+      name: &#x27;Bashkir&#x27;,
+      nativeName: &#x27;башҡорт теле&#x27;
+    },
+    eu: {
+      name: &#x27;Basque&#x27;,
+      nativeName: &#x27;euskara, euskera&#x27;
+    },
+    be: {
+      name: &#x27;Belarusian&#x27;,
+      nativeName: &#x27;Беларуская&#x27;
+    },
+    bn: {
+      name: &#x27;Bengali&#x27;,
+      nativeName: &#x27;বাংলা&#x27;
+    },
+    bh: {
+      name: &#x27;Bihari&#x27;,
+      nativeName: &#x27;भोजपुरी&#x27;
+    },
+    bi: {
+      name: &#x27;Bislama&#x27;,
+      nativeName: &#x27;Bislama&#x27;
+    },
+    bs: {
+      name: &#x27;Bosnian&#x27;,
+      nativeName: &#x27;bosanski jezik&#x27;
+    },
+    br: {
+      name: &#x27;Breton&#x27;,
+      nativeName: &#x27;brezhoneg&#x27;
+    },
+    bg: {
+      name: &#x27;Bulgarian&#x27;,
+      nativeName: &#x27;български език&#x27;
+    },
+    my: {
+      name: &#x27;Burmese&#x27;,
+      nativeName: &#x27;ဗမာစာ&#x27;
+    },
+    ca: {
+      name: &#x27;Catalan; Valencian&#x27;,
+      nativeName: &#x27;Català&#x27;
+    },
+    ch: {
+      name: &#x27;Chamorro&#x27;,
+      nativeName: &#x27;Chamoru&#x27;
+    },
+    ce: {
+      name: &#x27;Chechen&#x27;,
+      nativeName: &#x27;нохчийн мотт&#x27;
+    },
+    ny: {
+      name: &#x27;Chichewa; Chewa; Nyanja&#x27;,
+      nativeName: &#x27;chiCheŵa, chinyanja&#x27;
+    },
+    zh: {
+      name: &#x27;Chinese&#x27;,
+      nativeName: &#x27;中文 (Zhōngwén), 汉语, 漢語&#x27;
+    },
+    cv: {
+      name: &#x27;Chuvash&#x27;,
+      nativeName: &#x27;чӑваш чӗлхи&#x27;
+    },
+    kw: {
+      name: &#x27;Cornish&#x27;,
+      nativeName: &#x27;Kernewek&#x27;
+    },
+    co: {
+      name: &#x27;Corsican&#x27;,
+      nativeName: &#x27;corsu, lingua corsa&#x27;
+    },
+    cr: {
+      name: &#x27;Cree&#x27;,
+      nativeName: &#x27;ᓀᐦᐃᔭᐍᐏᐣ&#x27;
+    },
+    hr: {
+      name: &#x27;Croatian&#x27;,
+      nativeName: &#x27;hrvatski&#x27;
+    },
+    cs: {
+      name: &#x27;Czech&#x27;,
+      nativeName: &#x27;česky, čeština&#x27;
+    },
+    da: {
+      name: &#x27;Danish&#x27;,
+      nativeName: &#x27;dansk&#x27;
+    },
+    dv: {
+      name: &#x27;Divehi; Dhivehi; Maldivian;&#x27;,
+      nativeName: &#x27;ދިވެހި&#x27;
+    },
+    nl: {
+      name: &#x27;Dutch&#x27;,
+      nativeName: &#x27;Nederlands, Vlaams&#x27;
+    },
+    en: {
+      name: &#x27;English&#x27;,
+      nativeName: &#x27;English&#x27;
+    },
+    eo: {
+      name: &#x27;Esperanto&#x27;,
+      nativeName: &#x27;Esperanto&#x27;
+    },
+    et: {
+      name: &#x27;Estonian&#x27;,
+      nativeName: &#x27;eesti, eesti keel&#x27;
+    },
+    ee: {
+      name: &#x27;Ewe&#x27;,
+      nativeName: &#x27;Eʋegbe&#x27;
+    },
+    fo: {
+      name: &#x27;Faroese&#x27;,
+      nativeName: &#x27;føroyskt&#x27;
+    },
+    fj: {
+      name: &#x27;Fijian&#x27;,
+      nativeName: &#x27;vosa Vakaviti&#x27;
+    },
+    fi: {
+      name: &#x27;Finnish&#x27;,
+      nativeName: &#x27;suomi, suomen kieli&#x27;
+    },
+    fr: {
+      name: &#x27;French&#x27;,
+      nativeName: &#x27;français, langue française&#x27;
+    },
+    ff: {
+      name: &#x27;Fula; Fulah; Pulaar; Pular&#x27;,
+      nativeName: &#x27;Fulfulde, Pulaar, Pular&#x27;
+    },
+    gl: {
+      name: &#x27;Galician&#x27;,
+      nativeName: &#x27;Galego&#x27;
+    },
+    ka: {
+      name: &#x27;Georgian&#x27;,
+      nativeName: &#x27;ქართული&#x27;
+    },
+    de: {
+      name: &#x27;German&#x27;,
+      nativeName: &#x27;Deutsch&#x27;
+    },
+    el: {
+      name: &#x27;Greek, Modern&#x27;,
+      nativeName: &#x27;Ελληνικά&#x27;
+    },
+    gn: {
+      name: &#x27;Guaraní&#x27;,
+      nativeName: &#x27;Avañeẽ&#x27;
+    },
+    gu: {
+      name: &#x27;Gujarati&#x27;,
+      nativeName: &#x27;ગુજરાતી&#x27;
+    },
+    ht: {
+      name: &#x27;Haitian; Haitian Creole&#x27;,
+      nativeName: &#x27;Kreyòl ayisyen&#x27;
+    },
+    ha: {
+      name: &#x27;Hausa&#x27;,
+      nativeName: &#x27;Hausa, هَوُسَ&#x27;
+    },
+    he: {
+      name: &#x27;Hebrew (modern)&#x27;,
+      nativeName: &#x27;עברית&#x27;
+    },
+    hz: {
+      name: &#x27;Herero&#x27;,
+      nativeName: &#x27;Otjiherero&#x27;
+    },
+    hi: {
+      name: &#x27;Hindi&#x27;,
+      nativeName: &#x27;हिन्दी, हिंदी&#x27;
+    },
+    ho: {
+      name: &#x27;Hiri Motu&#x27;,
+      nativeName: &#x27;Hiri Motu&#x27;
+    },
+    hu: {
+      name: &#x27;Hungarian&#x27;,
+      nativeName: &#x27;Magyar&#x27;
+    },
+    ia: {
+      name: &#x27;Interlingua&#x27;,
+      nativeName: &#x27;Interlingua&#x27;
+    },
+    id: {
+      name: &#x27;Indonesian&#x27;,
+      nativeName: &#x27;Bahasa Indonesia&#x27;
+    },
+    ie: {
+      name: &#x27;Interlingue&#x27;,
+      nativeName: &#x27;Originally called Occidental; then Interlingue after WWII&#x27;
+    },
+    ga: {
+      name: &#x27;Irish&#x27;,
+      nativeName: &#x27;Gaeilge&#x27;
+    },
+    ig: {
+      name: &#x27;Igbo&#x27;,
+      nativeName: &#x27;Asụsụ Igbo&#x27;
+    },
+    ik: {
+      name: &#x27;Inupiaq&#x27;,
+      nativeName: &#x27;Iñupiaq, Iñupiatun&#x27;
+    },
+    io: {
+      name: &#x27;Ido&#x27;,
+      nativeName: &#x27;Ido&#x27;
+    },
+    is: {
+      name: &#x27;Icelandic&#x27;,
+      nativeName: &#x27;Íslenska&#x27;
+    },
+    it: {
+      name: &#x27;Italian&#x27;,
+      nativeName: &#x27;Italiano&#x27;
+    },
+    iu: {
+      name: &#x27;Inuktitut&#x27;,
+      nativeName: &#x27;ᐃᓄᒃᑎᑐᑦ&#x27;
+    },
+    ja: {
+      name: &#x27;Japanese&#x27;,
+      nativeName: &#x27;日本語 (にほんご／にっぽんご)&#x27;
+    },
+    jv: {
+      name: &#x27;Javanese&#x27;,
+      nativeName: &#x27;basa Jawa&#x27;
+    },
+    kl: {
+      name: &#x27;Kalaallisut, Greenlandic&#x27;,
+      nativeName: &#x27;kalaallisut, kalaallit oqaasii&#x27;
+    },
+    kn: {
+      name: &#x27;Kannada&#x27;,
+      nativeName: &#x27;ಕನ್ನಡ&#x27;
+    },
+    kr: {
+      name: &#x27;Kanuri&#x27;,
+      nativeName: &#x27;Kanuri&#x27;
+    },
+    ks: {
+      name: &#x27;Kashmiri&#x27;,
+      nativeName: &#x27;कश्मीरी, كشميري‎&#x27;
+    },
+    kk: {
+      name: &#x27;Kazakh&#x27;,
+      nativeName: &#x27;Қазақ тілі&#x27;
+    },
+    km: {
+      name: &#x27;Khmer&#x27;,
+      nativeName: &#x27;ភាសាខ្មែរ&#x27;
+    },
+    ki: {
+      name: &#x27;Kikuyu, Gikuyu&#x27;,
+      nativeName: &#x27;Gĩkũyũ&#x27;
+    },
+    rw: {
+      name: &#x27;Kinyarwanda&#x27;,
+      nativeName: &#x27;Ikinyarwanda&#x27;
+    },
+    ky: {
+      name: &#x27;Kirghiz, Kyrgyz&#x27;,
+      nativeName: &#x27;кыргыз тили&#x27;
+    },
+    kv: {
+      name: &#x27;Komi&#x27;,
+      nativeName: &#x27;коми кыв&#x27;
+    },
+    kg: {
+      name: &#x27;Kongo&#x27;,
+      nativeName: &#x27;KiKongo&#x27;
+    },
+    ko: {
+      name: &#x27;Korean&#x27;,
+      nativeName: &#x27;한국어 (韓國語), 조선말 (朝鮮語)&#x27;
+    },
+    ku: {
+      name: &#x27;Kurdish&#x27;,
+      nativeName: &#x27;Kurdî, كوردی‎&#x27;
+    },
+    kj: {
+      name: &#x27;Kwanyama, Kuanyama&#x27;,
+      nativeName: &#x27;Kuanyama&#x27;
+    },
+    la: {
+      name: &#x27;Latin&#x27;,
+      nativeName: &#x27;latine, lingua latina&#x27;
+    },
+    lb: {
+      name: &#x27;Luxembourgish, Letzeburgesch&#x27;,
+      nativeName: &#x27;Lëtzebuergesch&#x27;
+    },
+    lg: {
+      name: &#x27;Luganda&#x27;,
+      nativeName: &#x27;Luganda&#x27;
+    },
+    li: {
+      name: &#x27;Limburgish, Limburgan, Limburger&#x27;,
+      nativeName: &#x27;Limburgs&#x27;
+    },
+    ln: {
+      name: &#x27;Lingala&#x27;,
+      nativeName: &#x27;Lingála&#x27;
+    },
+    lo: {
+      name: &#x27;Lao&#x27;,
+      nativeName: &#x27;ພາສາລາວ&#x27;
+    },
+    lt: {
+      name: &#x27;Lithuanian&#x27;,
+      nativeName: &#x27;lietuvių kalba&#x27;
+    },
+    lu: {
+      name: &#x27;Luba-Katanga&#x27;,
+      nativeName: &#x27;&#x27;
+    },
+    lv: {
+      name: &#x27;Latvian&#x27;,
+      nativeName: &#x27;latviešu valoda&#x27;
+    },
+    gv: {
+      name: &#x27;Manx&#x27;,
+      nativeName: &#x27;Gaelg, Gailck&#x27;
+    },
+    mk: {
+      name: &#x27;Macedonian&#x27;,
+      nativeName: &#x27;македонски јазик&#x27;
+    },
+    mg: {
+      name: &#x27;Malagasy&#x27;,
+      nativeName: &#x27;Malagasy fiteny&#x27;
+    },
+    ms: {
+      name: &#x27;Malay&#x27;,
+      nativeName: &#x27;bahasa Melayu, بهاس ملايو‎&#x27;
+    },
+    ml: {
+      name: &#x27;Malayalam&#x27;,
+      nativeName: &#x27;മലയാളം&#x27;
+    },
+    mt: {
+      name: &#x27;Maltese&#x27;,
+      nativeName: &#x27;Malti&#x27;
+    },
+    mi: {
+      name: &#x27;Māori&#x27;,
+      nativeName: &#x27;te reo Māori&#x27;
+    },
+    mr: {
+      name: &#x27;Marathi (Marāṭhī)&#x27;,
+      nativeName: &#x27;मराठी&#x27;
+    },
+    mh: {
+      name: &#x27;Marshallese&#x27;,
+      nativeName: &#x27;Kajin M̧ajeļ&#x27;
+    },
+    mn: {
+      name: &#x27;Mongolian&#x27;,
+      nativeName: &#x27;монгол&#x27;
+    },
+    na: {
+      name: &#x27;Nauru&#x27;,
+      nativeName: &#x27;Ekakairũ Naoero&#x27;
+    },
+    nv: {
+      name: &#x27;Navajo, Navaho&#x27;,
+      nativeName: &#x27;Diné bizaad, Dinékʼehǰí&#x27;
+    },
+    nb: {
+      name: &#x27;Norwegian Bokmål&#x27;,
+      nativeName: &#x27;Norsk bokmål&#x27;
+    },
+    nd: {
+      name: &#x27;North Ndebele&#x27;,
+      nativeName: &#x27;isiNdebele&#x27;
+    },
+    ne: {
+      name: &#x27;Nepali&#x27;,
+      nativeName: &#x27;नेपाली&#x27;
+    },
+    ng: {
+      name: &#x27;Ndonga&#x27;,
+      nativeName: &#x27;Owambo&#x27;
+    },
+    nn: {
+      name: &#x27;Norwegian Nynorsk&#x27;,
+      nativeName: &#x27;Norsk nynorsk&#x27;
+    },
+    no: {
+      name: &#x27;Norwegian&#x27;,
+      nativeName: &#x27;Norsk&#x27;
+    },
+    ii: {
+      name: &#x27;Nuosu&#x27;,
+      nativeName: &#x27;ꆈꌠ꒿ Nuosuhxop&#x27;
+    },
+    nr: {
+      name: &#x27;South Ndebele&#x27;,
+      nativeName: &#x27;isiNdebele&#x27;
+    },
+    oc: {
+      name: &#x27;Occitan&#x27;,
+      nativeName: &#x27;Occitan&#x27;
+    },
+    oj: {
+      name: &#x27;Ojibwe, Ojibwa&#x27;,
+      nativeName: &#x27;ᐊᓂᔑᓈᐯᒧᐎᓐ&#x27;
+    },
+    cu: {
+      name: &#x27;Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic&#x27;,
+      nativeName: &#x27;ѩзыкъ словѣньскъ&#x27;
+    },
+    om: {
+      name: &#x27;Oromo&#x27;,
+      nativeName: &#x27;Afaan Oromoo&#x27;
+    },
+    or: {
+      name: &#x27;Oriya&#x27;,
+      nativeName: &#x27;ଓଡ଼ିଆ&#x27;
+    },
+    os: {
+      name: &#x27;Ossetian, Ossetic&#x27;,
+      nativeName: &#x27;ирон æвзаг&#x27;
+    },
+    pa: {
+      name: &#x27;Panjabi, Punjabi&#x27;,
+      nativeName: &#x27;ਪੰਜਾਬੀ, پنجابی‎&#x27;
+    },
+    pi: {
+      name: &#x27;Pāli&#x27;,
+      nativeName: &#x27;पाऴि&#x27;
+    },
+    fa: {
+      name: &#x27;Persian&#x27;,
+      nativeName: &#x27;فارسی&#x27;
+    },
+    pl: {
+      name: &#x27;Polish&#x27;,
+      nativeName: &#x27;polski&#x27;
+    },
+    ps: {
+      name: &#x27;Pashto, Pushto&#x27;,
+      nativeName: &#x27;پښتو&#x27;
+    },
+    pt: {
+      name: &#x27;Portuguese&#x27;,
+      nativeName: &#x27;Português&#x27;
+    },
+    qu: {
+      name: &#x27;Quechua&#x27;,
+      nativeName: &#x27;Runa Simi, Kichwa&#x27;
+    },
+    rm: {
+      name: &#x27;Romansh&#x27;,
+      nativeName: &#x27;rumantsch grischun&#x27;
+    },
+    rn: {
+      name: &#x27;Kirundi&#x27;,
+      nativeName: &#x27;kiRundi&#x27;
+    },
+    ro: {
+      name: &#x27;Romanian, Moldavian, Moldovan&#x27;,
+      nativeName: &#x27;română&#x27;
+    },
+    ru: {
+      name: &#x27;Russian&#x27;,
+      nativeName: &#x27;русский язык&#x27;
+    },
+    sa: {
+      name: &#x27;Sanskrit (Saṁskṛta)&#x27;,
+      nativeName: &#x27;संस्कृतम्&#x27;
+    },
+    sc: {
+      name: &#x27;Sardinian&#x27;,
+      nativeName: &#x27;sardu&#x27;
+    },
+    sd: {
+      name: &#x27;Sindhi&#x27;,
+      nativeName: &#x27;सिन्धी, سنڌي، سندھی‎&#x27;
+    },
+    se: {
+      name: &#x27;Northern Sami&#x27;,
+      nativeName: &#x27;Davvisámegiella&#x27;
+    },
+    sm: {
+      name: &#x27;Samoan&#x27;,
+      nativeName: &#x27;gagana faa Samoa&#x27;
+    },
+    sg: {
+      name: &#x27;Sango&#x27;,
+      nativeName: &#x27;yângâ tî sängö&#x27;
+    },
+    sr: {
+      name: &#x27;Serbian&#x27;,
+      nativeName: &#x27;српски језик&#x27;
+    },
+    gd: {
+      name: &#x27;Scottish Gaelic; Gaelic&#x27;,
+      nativeName: &#x27;Gàidhlig&#x27;
+    },
+    sn: {
+      name: &#x27;Shona&#x27;,
+      nativeName: &#x27;chiShona&#x27;
+    },
+    si: {
+      name: &#x27;Sinhala, Sinhalese&#x27;,
+      nativeName: &#x27;සිංහල&#x27;
+    },
+    sk: {
+      name: &#x27;Slovak&#x27;,
+      nativeName: &#x27;slovenčina&#x27;
+    },
+    sl: {
+      name: &#x27;Slovene&#x27;,
+      nativeName: &#x27;slovenščina&#x27;
+    },
+    so: {
+      name: &#x27;Somali&#x27;,
+      nativeName: &#x27;Soomaaliga, af Soomaali&#x27;
+    },
+    st: {
+      name: &#x27;Southern Sotho&#x27;,
+      nativeName: &#x27;Sesotho&#x27;
+    },
+    es: {
+      name: &#x27;Spanish; Castilian&#x27;,
+      nativeName: &#x27;español, castellano&#x27;
+    },
+    su: {
+      name: &#x27;Sundanese&#x27;,
+      nativeName: &#x27;Basa Sunda&#x27;
+    },
+    sw: {
+      name: &#x27;Swahili&#x27;,
+      nativeName: &#x27;Kiswahili&#x27;
+    },
+    ss: {
+      name: &#x27;Swati&#x27;,
+      nativeName: &#x27;SiSwati&#x27;
+    },
+    sv: {
+      name: &#x27;Swedish&#x27;,
+      nativeName: &#x27;svenska&#x27;
+    },
+    ta: {
+      name: &#x27;Tamil&#x27;,
+      nativeName: &#x27;தமிழ்&#x27;
+    },
+    te: {
+      name: &#x27;Telugu&#x27;,
+      nativeName: &#x27;తెలుగు&#x27;
+    },
+    tg: {
+      name: &#x27;Tajik&#x27;,
+      nativeName: &#x27;тоҷикӣ, toğikī, تاجیکی‎&#x27;
+    },
+    th: {
+      name: &#x27;Thai&#x27;,
+      nativeName: &#x27;ไทย&#x27;
+    },
+    ti: {
+      name: &#x27;Tigrinya&#x27;,
+      nativeName: &#x27;ትግርኛ&#x27;
+    },
+    bo: {
+      name: &#x27;Tibetan Standard, Tibetan, Central&#x27;,
+      nativeName: &#x27;བོད་ཡིག&#x27;
+    },
+    tk: {
+      name: &#x27;Turkmen&#x27;,
+      nativeName: &#x27;Türkmen, Түркмен&#x27;
+    },
+    tl: {
+      name: &#x27;Tagalog&#x27;,
+      nativeName: &#x27;Wikang Tagalog, ᜏᜒᜃᜅ᜔ ᜆᜄᜎᜓᜄ᜔&#x27;
+    },
+    tn: {
+      name: &#x27;Tswana&#x27;,
+      nativeName: &#x27;Setswana&#x27;
+    },
+    to: {
+      name: &#x27;Tonga (Tonga Islands)&#x27;,
+      nativeName: &#x27;faka Tonga&#x27;
+    },
+    tr: {
+      name: &#x27;Turkish&#x27;,
+      nativeName: &#x27;Türkçe&#x27;
+    },
+    ts: {
+      name: &#x27;Tsonga&#x27;,
+      nativeName: &#x27;Xitsonga&#x27;
+    },
+    tt: {
+      name: &#x27;Tatar&#x27;,
+      nativeName: &#x27;татарча, tatarça, تاتارچا‎&#x27;
+    },
+    tw: {
+      name: &#x27;Twi&#x27;,
+      nativeName: &#x27;Twi&#x27;
+    },
+    ty: {
+      name: &#x27;Tahitian&#x27;,
+      nativeName: &#x27;Reo Tahiti&#x27;
+    },
+    ug: {
+      name: &#x27;Uighur, Uyghur&#x27;,
+      nativeName: &#x27;Uyƣurqə, ئۇيغۇرچە‎&#x27;
+    },
+    uk: {
+      name: &#x27;Ukrainian&#x27;,
+      nativeName: &#x27;українська&#x27;
+    },
+    ur: {
+      name: &#x27;Urdu&#x27;,
+      nativeName: &#x27;اردو&#x27;
+    },
+    uz: {
+      name: &#x27;Uzbek&#x27;,
+      nativeName: &#x27;zbek, Ўзбек, أۇزبېك‎&#x27;
+    },
+    ve: {
+      name: &#x27;Venda&#x27;,
+      nativeName: &#x27;Tshivenḓa&#x27;
+    },
+    vi: {
+      name: &#x27;Vietnamese&#x27;,
+      nativeName: &#x27;Tiếng Việt&#x27;
+    },
+    vo: {
+      name: &#x27;Volapük&#x27;,
+      nativeName: &#x27;Volapük&#x27;
+    },
+    wa: {
+      name: &#x27;Walloon&#x27;,
+      nativeName: &#x27;Walon&#x27;
+    },
+    cy: {
+      name: &#x27;Welsh&#x27;,
+      nativeName: &#x27;Cymraeg&#x27;
+    },
+    wo: {
+      name: &#x27;Wolof&#x27;,
+      nativeName: &#x27;Wollof&#x27;
+    },
+    fy: {
+      name: &#x27;Western Frisian&#x27;,
+      nativeName: &#x27;Frysk&#x27;
+    },
+    xh: {
+      name: &#x27;Xhosa&#x27;,
+      nativeName: &#x27;isiXhosa&#x27;
+    },
+    yi: {
+      name: &#x27;Yiddish&#x27;,
+      nativeName: &#x27;ייִדיש&#x27;
+    },
+    yo: {
+      name: &#x27;Yoruba&#x27;,
+      nativeName: &#x27;Yorùbá&#x27;
+    },
+    za: {
+      name: &#x27;Zhuang, Chuang&#x27;,
+      nativeName: &#x27;Saɯ cueŋƅ, Saw cuengh&#x27;
+    }
+  };
+
+  constructor(private httpClient: HttpClient) {}
+
+  getLanguageList(movieList) {
+    const languageList &#x3D; [];
+    const languageObj &#x3D; {};
+    for (const movie of movieList) {
+      // let found &#x3D; false;
+      // for (const language of languageList) {
+      //   if (movie.original_language &#x3D;&#x3D;&#x3D; language.key) {
+      //     found &#x3D; true;
+      //     break;
+      //   }
+      // }
+      if (languageObj[movie.original_language]) {
+        languageObj[movie.original_language].value.push(movie);
+      } else {
+        languageObj[movie.original_language] &#x3D; {
+          key: this.isoLangs[movie.original_language].name,
+          code: movie.original_language,
+          value: []
+        };
+        languageObj[movie.original_language].value.push(movie);
+      }
+
+      // if (found &#x3D;&#x3D;&#x3D; false) {
+      //   const lang &#x3D; {
+      //     key: movie.original_language,
+      //     name: this.isoLangs[movie.original_language].name
+      //   };
+      //   languageList.push(lang);
+      // }
+    }
+    for (const language in languageObj) {
+      if (languageObj.hasOwnProperty(language)) {
+        languageList.push(languageObj[language]);
+      }
+    }
+    return languageList;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'MovieListService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

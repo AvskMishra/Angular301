@@ -1,4 +1,4 @@
-<div *ngFor="let movieObj of movieList" style="background-color: #D8D8D8">
+<div *ngFor="let movieObj of movieList ; trackBy: track" style="background-color: #D8D8D8">
   <div fxLayout="column" fxLayoutAlign="center stretch" fxLayoutGap="5%">
     <mat-card
       style="background-color:#2e2e2e; color: white"
@@ -14,7 +14,7 @@
     fxLayoutAlign="center center"
     fxLayoutGap="10%"
   >
-    <div *ngFor="let movie of (movieObj.value | sortMovie: userPreference | homeFilter: movieFilter:'')" class="list">
+    <div *ngFor="let movie of (movieObj.value | sortMovie: userPreference | homeFilter: movieFilter:'') ; trackBy: track" class="list">
       <mat-card class="item">
         <div>
           <img

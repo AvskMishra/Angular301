@@ -743,13 +743,6 @@ export class MovieListService {
     const languageList = [];
     const languageObj = {};
     for (const movie of movieList) {
-      // let found = false;
-      // for (const language of languageList) {
-      //   if (movie.original_language === language.key) {
-      //     found = true;
-      //     break;
-      //   }
-      // }
       if (languageObj[movie.original_language]) {
         languageObj[movie.original_language].value.push(movie);
       } else {
@@ -760,14 +753,6 @@ export class MovieListService {
         };
         languageObj[movie.original_language].value.push(movie);
       }
-
-      // if (found === false) {
-      //   const lang = {
-      //     key: movie.original_language,
-      //     name: this.isoLangs[movie.original_language].name
-      //   };
-      //   languageList.push(lang);
-      // }
     }
     for (const language in languageObj) {
       if (languageObj.hasOwnProperty(language)) {

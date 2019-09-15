@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./social-feeds.component.scss']
 })
 export class SocialFeedsComponent implements OnInit {
-
+anytext: any = 'social-feeds works!';
   constructor() { }
 
   ngOnInit() {

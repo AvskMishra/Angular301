@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
 import * as MovieState from '../../reducers/index';
 import { SetNowPlayingMovies, SetUpcomingMovies, SetCastAndCrew, SetTheaters } from '../store/actions/home.action';
@@ -32,7 +32,6 @@ export class HomeService {
           });
         });
         this.store.dispatch(new SetNowPlayingMovies(movies['results']));
-        // this.getCastAndCrew(movies['results']);
       },
       error => {
         console.error(error);
@@ -53,7 +52,6 @@ export class HomeService {
           });
         });
         this.store.dispatch(new SetUpcomingMovies(movies['results']));
-        // this.getCastAndCrew(movies['results']);
       },
       error => {
         console.error(error);

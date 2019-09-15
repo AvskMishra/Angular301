@@ -1,11 +1,12 @@
-import { Component, OnInit, Output, EventEmitter, ViewChild, TemplateRef } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ViewChild, TemplateRef, ChangeDetectionStrategy } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-add-theater',
   templateUrl: './add-theater.component.html',
-  styleUrls: ['./add-theater.component.scss']
+  styleUrls: ['./add-theater.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AddTheaterComponent implements OnInit {
 

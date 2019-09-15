@@ -38,7 +38,7 @@
         </mat-form-field>
         <mat-form-field class="theaterList">
           <mat-select required [formControl]="selectTheater">
-            <mat-option *ngFor="let theater of theaterList" [value]="theater"> {{ theater.name }} </mat-option>
+            <mat-option *ngFor="let theater of theaterList ; trackBy: track" [value]="theater"> {{ theater.name }} </mat-option>
           </mat-select>
         </mat-form-field>
 

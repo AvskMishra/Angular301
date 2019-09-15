@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Store, State } from '@ngrx/store';
+import { Store } from '@ngrx/store';
 import * as MovieState from '../../../reducers/index';
 import * as UserState from '../../../reducers/index';
 

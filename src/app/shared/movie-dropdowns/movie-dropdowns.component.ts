@@ -40,5 +40,11 @@ export class MovieDropdownsComponent implements OnInit {
       this.genreObj = Object.assign({}, this.genreObj);
       this.genreChange$.emit(this.genreObj);
     });
+
+
+  }
+
+  track(_index, item) {
+    return item;
   }
 }

@@ -90,7 +90,6 @@ export class HeaderComponent implements OnInit {
     }
 
     this.socialAuthService.signOut().then(data => {
-      // window.open('https://accounts.google.com/Logout');
       sessionStorage.clear();
       this.store.dispatch(new RemoveUser());
       this.router.navigate(['/home']);

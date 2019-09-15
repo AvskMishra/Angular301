@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
-
-// This service will group movies under a language group
 @Injectable({
   providedIn: 'root'
 })
 export class SegregateMovieService {
-  constructor() {}
+  constructor() { }
 
   getSortedbyLanguage(languageList, moviesList) {
     const mlist = [];

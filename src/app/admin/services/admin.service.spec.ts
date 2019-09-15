@@ -1,46 +1,74 @@
-import { nowPlayingMoviesSelector } from './../../reducers/index';
-import { TestBed } from '@angular/core/testing';
-import {HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { async } from '@angular/core/testing';
 import { AdminService } from './admin.service';
+import { TestBed } from '@angular/core/testing';
+import { TMDB_URLS, JSON_SERVER_URLS, BASE_URL } from '../../shared/config';
+import { environment } from '../../../environments/environment';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { componentFactoryName } from '@angular/compiler';
+beforeEach(() => {
+  TestBed.configureTestingModule({
+    providers: [AdminService],
+    imports: [HttpClientTestingModule]
+  });
+});
 
 describe('AdminService', () => {
-  let service: AdminService;
-  
   function setup() {
-    const adminService = TestBed.get(AdminService);
+    const sharedService = TestBed.get(AdminService);
     const httpTestingController = TestBed.get(HttpTestingController);
-    return { adminService, httpTestingController };
+    return { sharedService, httpTestingController };
   }
 
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      providers: [AdminService]
+  it('should do the put operation for new theater', async () => {
+    const { sharedService, httpTestingController } = setup();
+    sharedService.newTheater();
+    const THEATERS_URL = environment.JSONSERVER + JSON_SERVER_URLS.THEATER_URL;
+    const req = httpTestingController.expectOne(THEATERS_URL);
+    expect(req.request.method).toBe('GET');
+    req.flush({
+      theaters: ['theater01']
     });
-    service = TestBed.get(AdminService);
-  });
-  it('can load instance', () => {
-    expect(service).toBeTruthy();
-  });
-
-  it('should search a movie', () => {
-    const { adminService , httpTestingController } = setup();
-    // tslint:disable-next-line: max-line-length
-  //  const mockGoogleMapData = {id: 1, country : 'United states of america', zipcode: '56743'};
-    adminService. searchMovie('IT').subscribe(data => {
-      expect(data).toEqual('IT');
+    const reqPut = httpTestingController.expectOne(THEATERS_URL);
+    expect(reqPut.request.method).toBe('PUT');
+    reqPut.flush({
+      theaters: ['theater01']
     });
   });
 
+  it('test case for Search Movie', async () => {
+    const SEARCH_URL = BASE_URL.TMDB_API + TMDB_URLS.SEARCH_URL;
+    const { sharedService, httpTestingController } = setup();
+    const movieResult = {};
+    sharedService.searchMovie('joker').subscribe(data => {
+      expect(data.mapData).toEqual(movieResult);
+    });
+    const req = httpTestingController.expectOne(SEARCH_URL + environment.API_KEY + '&query=' + 'joker');
+    expect(req.request.method).toBe('GET');
+    req.flush({
+      mapData: movieResult
+    });
+  });
 
-  // it('should saveNowPlayinge', () => {
-  //   const { adminService , httpTestingController } = setup();
-  //   // tslint:disable-next-line: max-line-length
-  // //  const mockGoogleMapData = {id: 1, country : 'United states of america', zipcode: '56743'};
-  //   adminService.nowPlayingMoviesSelector('IT', '1').subscribe(data => {
-  //     expect(data).toEqual('IT','1');
-  //   });
-  // });
+  it('test case for  saveNowPlaying()', async () => {
+    const nowPlaying = [1];
+    const theaterId = '123';
+    const { sharedService, httpTestingController } = setup();
+    sharedService.saveNowPlaying(nowPlaying, theaterId);
+    const THEATERS_URL = environment.JSONSERVER + JSON_SERVER_URLS.THEATER_URL;
+    const req = httpTestingController.expectOne(THEATERS_URL);
+    expect(req.request.method).toBe('GET');
+    req.flush({
+      theaters: [{ id: '123' }]
+    });
+    const reqPut = httpTestingController.expectOne(THEATERS_URL);
+    expect(reqPut.request.method).toBe('PUT');
+    reqPut.flush({
+      theaters: ['theater01']
+    });
+  });
 
+  afterEach(() => {
+    const { httpTestingController } = setup();
+    httpTestingController.verify();
+  });
 });

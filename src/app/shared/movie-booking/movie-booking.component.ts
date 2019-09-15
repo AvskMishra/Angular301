@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
-import { FormControl } from '@angular/forms';
 @Component({
   selector: 'app-movie-booking',
   templateUrl: './movie-booking.component.html',
@@ -9,7 +7,6 @@ import { FormControl } from '@angular/forms';
 export class MovieBookingComponent implements OnInit {
   dialogResult;
   @Input() movieId;
-  // dateSelector = new  FormControl(new Date());
   theaters = [{
     'name': 'ABC',
     'location': 'asdas',
@@ -17,7 +14,6 @@ export class MovieBookingComponent implements OnInit {
   }];
   minDate = new Date();
   constructor() { }
-
   ngOnInit() {
   }
 }

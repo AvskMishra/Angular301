@@ -1,6 +1,5 @@
 import { Component, OnInit, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { ConfirmationModalComponent } from '../confirmation-modal/confirmation-modal.component';
 import { Router } from '@angular/router';
 import { TMDB_URLS } from '../../../config';
 @Component({
@@ -11,16 +10,11 @@ import { TMDB_URLS } from '../../../config';
 })
 export class SeatReservationModalComponent implements OnInit {
   imagesPath = TMDB_URLS.IMAGE_URL;
-  // variable declarations
   movieTitle;
   screen;
   time;
-
-  // rows: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
   rows: string[] = ['A', 'B', 'C', 'D'];
   cols: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-  // reserved: string[] = ['A2', 'A3', 'F5', 'F1', 'F2','F6', 'F7', 'F8', 'H1', 'H2', 'H3', 'H4'];
   reserved: string[] = ['A2', 'A3', 'B5', 'C1', 'C2', 'D4'];
   selected: string[] = [];
 
@@ -38,7 +32,6 @@ export class SeatReservationModalComponent implements OnInit {
   ) {
     console.log('data---', data);
   }
-
   ngOnInit() {
     const authValid = sessionStorage.getItem('authDetails');
     if (authValid) {
@@ -60,7 +53,6 @@ export class SeatReservationModalComponent implements OnInit {
     this.dialogRef.close('Cancel');
   }
 
-  // return status of each seat
   getStatus(seatPos: string) {
     if (this.reserved.indexOf(seatPos) !== -1) {
       return 'reserved';
@@ -69,18 +61,19 @@ export class SeatReservationModalComponent implements OnInit {
     }
   }
 
-  // click handler
   seatClicked(seatPos: string) {
     console.log('test', seatPos);
     const index = this.selected.indexOf(seatPos);
     if (index !== -1) {
-      // seat already selected, remove
       this.selected.splice(index, 1);
     } else {
-      // push to selected array only if it is not reserved
       if (this.reserved.indexOf(seatPos) === -1) {
         this.selected.push(seatPos);
       }
     }
   }
+    track(_index, item) {
+        return item;
+      }
+
 }

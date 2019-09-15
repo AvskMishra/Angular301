@@ -34,9 +34,7 @@ describe('AddTheaterComponent', () => {
       const matDialogStub: MatDialog = fixture.debugElement.injector.get(
         MatDialog
       );
-      // spyOn(matDialogStub, 'open').and.callThrough();
       component.onSubmit();
-      // expect(matDialogStub.open).toHaveBeenCalled();
     });
   });
 

@@ -1,15 +1,13 @@
-import { Component, OnInit, Output, EventEmitter, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import { HomeService } from '../home/services/home.service';
 import { LoginService } from '../core/services/login.service';
 
 import { Store } from '@ngrx/store';
 import * as UserState from '../reducers/index';
-import { SetUser } from 'src/app/core/store/action/userDetails.action';
 import { User } from 'src/app/core/models/user.model';
 import { MatDialog } from '@angular/material';
 
 import { FormBuilder, Validators } from '@angular/forms';
-// import { UserState } from "src/app/core/store/reducers/userDetails.reducer";
 import * as MovieState from '../reducers/index';
 
 @Component({
@@ -45,7 +43,6 @@ export class ProfileComponent implements OnInit {
     private matDialog: MatDialog
   ) { }
 
-  // after clicking submit button adding preference option is here
   public submitPreferences() {
     let currentSeesion;
     currentSeesion = JSON.parse(sessionStorage.getItem('authDetails'));
@@ -68,4 +65,9 @@ export class ProfileComponent implements OnInit {
     this.newPreference.reset();
     this.matDialog.closeAll();
   }
+
+  track(_index, item) {
+    return item;
+  }
+
 }

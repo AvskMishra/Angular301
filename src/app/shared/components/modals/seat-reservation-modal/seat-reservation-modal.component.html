@@ -11,7 +11,6 @@
   <md-dialog-content>
     <div class="container">
       <main class="innerContainer">
-        <!-- Showing a static legend bar -->
         <div class="legend">
           <span class="freeSeat padding-left">
             <i class="material-icons">check_box_outline_blank </i>
@@ -26,9 +25,9 @@
           </span><span class="rowSpan"> SELECTED</span>
         </div>
         <br>
-        <!-- Generate the seating grid -->
         <div *ngFor="let row of rows" class="grid__DIV">
-          <span class="seat" *ngFor="let col of cols;index as i;" (click)="seatClicked(row + col)" [ngSwitch]="getStatus(row + col)">
+          <span class="seat" *ngFor="let col of cols;index as i; trackBy: track " (click)="seatClicked(row + col)"
+            [ngSwitch]="getStatus(row + col)">
             <span class="rowSpan">{{row+col}}</span>
             <span>
               <span *ngSwitchCase="'selected'" class="selectedSeat">
@@ -43,11 +42,9 @@
             </span>
           </span>
         </div>
-
-        <!-- Structural directive - only visible on selection -->
         <div *ngIf="selected.length > 0">
           <div class="wordWrap">SEATS RESERVED : {{selected.length}}
-            <span class="count" *ngFor="let rowSelect of selected">({{rowSelect}})</span>
+            <span class="count" *ngFor="let rowSelect of selected ; trackBy: track ">({{rowSelect}})</span>
           </div>
           <div>PRICE : {{ticketPrice}} * {{selected.length}} = {{currency}}.{{ticketPrice*selected.length}} </div>
           <div>CONVENIENCE FEE : {{currency}}.{{convFee}}</div>
@@ -55,9 +52,8 @@
         </div>
         <br>
         <div class="screen-img screen">
-          <!-- <img src="http://placehold.it/350x150" class="screen-image__holder" alt="image caption" /> -->
-          <img src="{{imagesPath}}{{movieList.poster_path}}" class="screen-image__holder" onerror="this.src='/assets/images/noImage.jpg';"
-            alt="movie poster">
+          <img src="{{imagesPath}}{{movieList.poster_path}}" class="screen-image__holder"
+            onerror="this.src='/assets/images/noImage.jpg';" alt="movie poster">
         </div>
       </main>
     </div>
@@ -65,7 +61,6 @@
 
   <hr class="space__hr">
   <md-dialog-actions>
-    <!-- Action buttons -->
     <div class="example-button-row">
       <button mat-raised-button="" class="mat-raised-button" (click)="onCloseCancel()">CANCEL</button>&nbsp;
       <button mat-raised-button="" class="mat-raised-button mat-primary btn-book" [disabled]="selected.length === 0"
@@ -81,7 +76,6 @@
       <p class="login__para">Please login to continue booking..</p>
     </md-dialog-content>
     <md-dialog-actions>
-      <!-- Action buttons -->
       <div class="example-button-row">
         <button mat-raised-button="" class="mat-raised-button mat-primary btn-book" (click)="onNoClick()">OK</button>
       </div>

@@ -1,0 +1,952 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>book-my-movie documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">book-my-movie documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ChangeShowComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/admin/components/change-show/change-show.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-change-show</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./change-show.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./change-show.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#movieInput">movieInput</a>
+                            </li>
+                            <li>
+                                <a href="#movieResult">movieResult</a>
+                            </li>
+                            <li>
+                                <a href="#nowPlaying">nowPlaying</a>
+                            </li>
+                            <li>
+                                <a href="#nowShowing">nowShowing</a>
+                            </li>
+                            <li>
+                                <a href="#selectedTheater">selectedTheater</a>
+                            </li>
+                            <li>
+                                <a href="#selectTheater">selectTheater</a>
+                            </li>
+                            <li>
+                                <a href="#successDialog">successDialog</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addMovie">addMovie</a>
+                            </li>
+                            <li>
+                                <a href="#cancel">cancel</a>
+                            </li>
+                            <li>
+                                <a href="#dialogOk">dialogOk</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#save">save</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#theaterList">theaterList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(adminService: <a href="../injectables/AdminService.html">AdminService</a>, matDialog: MatDialog)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>adminService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AdminService.html" target="_self" >AdminService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>matDialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="theaterList"></a>
+                        <b>theaterList</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:13</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addMovie"></a>
+                    <span class="name">
+                        <b>
+                            addMovie
+                        </b>
+                        <a href="#addMovie"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addMovie(movie)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>movie</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancel"></a>
+                    <span class="name">
+                        <b>
+                            cancel
+                        </b>
+                        <a href="#cancel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialogOk"></a>
+                    <span class="name">
+                        <b>
+                            dialogOk
+                        </b>
+                        <a href="#dialogOk"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dialogOk()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="save"></a>
+                    <span class="name">
+                        <b>
+                            save
+                        </b>
+                        <a href="#save"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>save()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="movieInput"></a>
+                        <span class="name">
+                            <b>
+                            movieInput</b>
+                            <a href="#movieInput"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="movieResult"></a>
+                        <span class="name">
+                            <b>
+                            movieResult</b>
+                            <a href="#movieResult"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nowPlaying"></a>
+                        <span class="name">
+                            <b>
+                            nowPlaying</b>
+                            <a href="#nowPlaying"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nowShowing"></a>
+                        <span class="name">
+                            <b>
+                            nowShowing</b>
+                            <a href="#nowShowing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedTheater"></a>
+                        <span class="name">
+                            <b>
+                            selectedTheater</b>
+                            <a href="#selectedTheater"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectTheater"></a>
+                        <span class="name">
+                            <b>
+                            selectTheater</b>
+                            <a href="#selectTheater"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/FormControl" target="_blank" >FormControl</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="successDialog"></a>
+                        <span class="name">
+                            <b>
+                            successDialog</b>
+                            <a href="#successDialog"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>TemplateRef&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;successDialog&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/admin/components/change-show/change-show.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input, ViewChild, TemplateRef } from &#x27;@angular/core&#x27;;
+import { FormControl } from &#x27;@angular/forms&#x27;;
+import { theaterList } from &#x27;src/app/reducers&#x27;;
+import { AdminService } from &#x27;../../services/admin.service&#x27;;
+import { MatDialog } from &#x27;@angular/material&#x27;;
+
+@Component({
+  selector: &#x27;app-change-show&#x27;,
+  templateUrl: &#x27;./change-show.component.html&#x27;,
+  styleUrls: [&#x27;./change-show.component.scss&#x27;]
+})
+export class ChangeShowComponent implements OnInit {
+  @Input() theaterList;
+  movieInput: FormControl;
+  selectTheater: FormControl;
+  movieResult;
+  selectedTheater;
+  nowShowing &#x3D; [];
+  nowPlaying &#x3D; [];
+  @ViewChild(&#x27;successDialog&#x27;) successDialog: TemplateRef&lt;any&gt;;
+
+  constructor(private adminService: AdminService, private matDialog: MatDialog) {
+    this.movieInput &#x3D; new FormControl();
+    this.selectTheater &#x3D; new FormControl();
+  }
+
+  ngOnInit() {
+    this.movieInput.valueChanges.subscribe(value &#x3D;&gt; {
+      if (value) {
+        this.adminService.searchMovie(value).subscribe(movies &#x3D;&gt; {
+          this.movieResult &#x3D; movies[&#x27;results&#x27;];
+        });
+      }
+    });
+    this.selectTheater.valueChanges.subscribe(value &#x3D;&gt; {
+      this.selectedTheater &#x3D; value;
+      this.nowShowing &#x3D; [];
+    });
+  }
+  addMovie(movie) {
+    this.nowShowing.push(movie.name);
+    this.nowPlaying.push(movie.id);
+  }
+  save() {
+    this.matDialog.open(this.successDialog);
+    this.adminService.saveNowPlaying(this.nowPlaying, this.selectTheater[&#x27;tid&#x27;]);
+  }
+  cancel() {
+    this.nowShowing &#x3D; [];
+  }
+  dialogOk() {
+    this.nowShowing &#x3D; [];
+    this.movieInput.reset();
+    this.selectTheater.reset();
+    this.matDialog.closeAll();
+    this.movieResult &#x3D; [];
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div fxLayout&#x3D;&quot;column&quot; fxLayoutGap&#x3D;&quot;1%&quot; fxLayoutAlign&#x3D;&quot;center center&quot;&gt;
+  &lt;div fxLayout&#x3D;&quot;row Wrap&quot; fxLayoutGap&#x3D;&quot;3%&quot;&gt;
+    &lt;mat-form-field&gt;
+      &lt;mat-select required [formControl]&#x3D;&quot;selectTheater&quot; placeholder&#x3D;&quot;Select Theater&quot;&gt;
+        &lt;mat-option *ngFor&#x3D;&quot;let theater of theaterList&quot; [value]&#x3D;&quot;theater&quot;&gt;
+          {{theater.name}}
+        &lt;/mat-option&gt;
+      &lt;/mat-select&gt;
+    &lt;/mat-form-field&gt;
+    &lt;mat-form-field&gt;
+      &lt;input matInput placeholder&#x3D;&quot;Enter Movie Name&quot; type&#x3D;&quot;text&quot; [formControl]&#x3D;&quot;movieInput&quot;&gt;
+    &lt;/mat-form-field&gt;
+  &lt;/div&gt;
+  &lt;h4 *ngIf&#x3D;&quot;nowShowing.length &gt; 0&quot;&gt;Now Playing in {{selectedTheater.name}}&lt;/h4&gt;
+  &lt;div *ngIf&#x3D;&quot;nowShowing.length &gt; 0&quot; fxLayout&#x3D;&quot;row&quot; fxLayoutGap&#x3D;&quot;3%&quot;&gt;
+    &lt;button mat-raised-button *ngFor&#x3D;&quot;let movies of nowShowing&quot;&gt;
+      {{movies}}
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div fxLayout&#x3D;&quot;row&quot; fxLayoutGap&#x3D;&quot;1%&quot; *ngIf&#x3D;&quot;nowShowing.length &gt; 0&quot; fxLayoutAlign&#x3D;&quot;center center&quot;&gt;
+    &lt;button mat-raised-button color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;save()&quot;&gt;
+      &lt;mat-icon&gt;save&lt;/mat-icon&gt;
+    &lt;/button&gt;
+    &lt;button mat-raised-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;cancel()&quot;&gt;
+      &lt;mat-icon&gt;cancel&lt;/mat-icon&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div fxLayout&#x3D;&quot;row wrap&quot; fxLayoutGap&#x3D;&quot;3%&quot; fxLayoutAlign&#x3D;&quot;center center&quot;&gt;
+    &lt;mat-card *ngFor&#x3D;&quot;let movie of movieResult&quot; class&#x3D;&quot;cardContent&quot;&gt;
+      &lt;div fxLayout&#x3D;&quot;row&quot;&gt;
+        &lt;mat-card-content&gt;
+          &lt;button mat-button (click)&#x3D;&quot;addMovie(movie)&quot;&gt;
+            {{movie.title}}
+            &lt;mat-icon&gt;add&lt;/mat-icon&gt;
+          &lt;/button&gt;
+        &lt;/mat-card-content&gt;
+      &lt;/div&gt;
+    &lt;/mat-card&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ng-template #successDialog&gt;
+  &lt;div&gt;New Movies added sucessfully &lt;/div&gt;
+  &lt;button mat-raised-button class&#x3D;&quot;accept&quot; color&#x3D;&quot;primary&quot; (click)&#x3D;&quot;dialogOk()&quot;&gt;OK&lt;/button&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./change-show.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.cardContent {
+  width: 150px;
+  min-width: 10px;
+  max-width: 250px;
+  margin-top: 20px;
+}
+
+:host /deep/ .mat-select-value {
+  color: #fff !important;
+}
+
+:host /deep/.mat-form-field-label {
+  color: #fff;
+}
+
+.accept {
+  margin-left: 40%;
+  margin-top: 8%;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div fxLayout="column" fxLayoutGap="1%" fxLayoutAlign="center center">  <div fxLayout="row Wrap" fxLayoutGap="3%">    <mat-form-field>      <mat-select required [formControl]="selectTheater" placeholder="Select Theater">        <mat-option *ngFor="let theater of theaterList" [value]="theater">          {{theater.name}}        </mat-option>      </mat-select>    </mat-form-field>    <mat-form-field>      <input matInput placeholder="Enter Movie Name" type="text" [formControl]="movieInput">    </mat-form-field>  </div>  <h4 *ngIf="nowShowing.length > 0">Now Playing in {{selectedTheater.name}}</h4>  <div *ngIf="nowShowing.length > 0" fxLayout="row" fxLayoutGap="3%">    <button mat-raised-button *ngFor="let movies of nowShowing">      {{movies}}    </button>  </div>  <div fxLayout="row" fxLayoutGap="1%" *ngIf="nowShowing.length > 0" fxLayoutAlign="center center">    <button mat-raised-button color="primary" (click)="save()">      <mat-icon>save</mat-icon>    </button>    <button mat-raised-button color="warn" (click)="cancel()">      <mat-icon>cancel</mat-icon>    </button>  </div>  <div fxLayout="row wrap" fxLayoutGap="3%" fxLayoutAlign="center center">    <mat-card *ngFor="let movie of movieResult" class="cardContent">      <div fxLayout="row">        <mat-card-content>          <button mat-button (click)="addMovie(movie)">            {{movie.title}}            <mat-icon>add</mat-icon>          </button>        </mat-card-content>      </div>    </mat-card>  </div></div><ng-template #successDialog>  <div>New Movies added sucessfully </div>  <button mat-raised-button class="accept" color="primary" (click)="dialogOk()">OK</button></ng-template></div>'
+    var COMPONENTS = [{'name': 'AddTheaterComponent', 'selector': 'app-add-theater'},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChangeShowComponent', 'selector': 'app-change-show'},{'name': 'ConfirmationModalComponent', 'selector': 'app-confirmation-modal'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HomePageComponent', 'selector': 'app-home-page'},{'name': 'MovieBookingComponent', 'selector': 'app-movie-booking'},{'name': 'MovieCardComponent', 'selector': 'app-movie-card'},{'name': 'MovieComponent', 'selector': 'app-movie'},{'name': 'MovieDescriptionComponent', 'selector': 'app-movie-description'},{'name': 'MovieDropdownsComponent', 'selector': 'app-movie-dropdowns'},{'name': 'MoviePageComponent', 'selector': 'app-movie-page'},{'name': 'PaymentBookingComponent', 'selector': 'app-payment-booking'},{'name': 'PreBookingComponent', 'selector': 'app-pre-booking'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'SDialogCardsComponent', 'selector': 'app-s-dialog-cards'},{'name': 'SDialogComponent', 'selector': 'app-s-dialog'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SeatReservationModalComponent', 'selector': 'app-seat-reservation-modal'},{'name': 'ShellComponent', 'selector': 'app-shell'},{'name': 'SocialFeedsComponent', 'selector': 'app-social-feeds'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ChangeShowComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ChangeShowComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

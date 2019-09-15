@@ -8,7 +8,7 @@ import { MatDialogRef, MatDialog, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class PreBookingComponent implements OnInit {
 
-  constructor( public dialog: MatDialog,
+  constructor(public dialog: MatDialog,
     private dialogRef: MatDialogRef<PreBookingComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 

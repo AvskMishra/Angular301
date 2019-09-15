@@ -1,16 +1,13 @@
-import { ActionReducer, ActionReducerMap, createFeatureSelector, createSelector, MetaReducer } from '@ngrx/store';
+import {  ActionReducerMap, createFeatureSelector, createSelector, MetaReducer } from '@ngrx/store';
 import { environment } from '../../environments/environment';
-import { MoviesState, moviesReducer, initialMovieState } from '../home/store/reducers/home.reducer';
-import { UserState, userReducer, initialUserState } from '../core/store/reducers/userDetails.reducer';
+import { MoviesState, moviesReducer } from '../home/store/reducers/home.reducer';
+import { UserState, userReducer } from '../core/store/reducers/userDetails.reducer';
 
 export interface State {
     movies: MoviesState;
     user: UserState;
 }
 
-// export const initialState: State = {
-//     movies: initialMovieState
-// };
 export const reducers: ActionReducerMap<State> = {
     movies: moviesReducer,
     user: userReducer
